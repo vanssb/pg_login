@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Persons>
+<% User.all.each do |user| %>
+    <Person>
+        <User><%= user.name %></User>
+        <Pass><%= user.score %></Pass>
+    </Person>
+<% end %>
+</Persons>

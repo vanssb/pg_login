@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Status>
+    <Created><%= @result %></Created>
+    <Errors>
+        <% @user.errors.full_messages.each do |msg| %>
+        <Error><%= msg %></Error>
+        <% end %>
+    </Errors>
+</Status>

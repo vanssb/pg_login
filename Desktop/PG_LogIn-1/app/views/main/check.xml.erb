@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Person>
+    <% if @user %>
+	 <Status>1</Status>
+     <Nick><%= @user.nick %></Nick>
+	 <Score><%= @user.score %></Score>
+	 <% else %>
+	 <Status>0</Status>
+     <Nick></Nick>
+	 <Score></Score>
+	 <% end %>
+</Person>

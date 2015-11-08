@@ -1,0 +1,16 @@
+<table border=1px width=100% align=center class="table_blur">
+<tr>
+    <th width=5%></th>
+    <th>Nick</th>
+    <th>Score</th>
+</tr>
+<% i=1 %>
+<% User.all.order(score: :desc).each do |user| %>
+    <tr align=center>
+        <td><%= i %></td>
+        <td><%= user.name %></td>
+        <td><%= user.score %></td>
+        <% i+=1 %>
+    </tr>
+<% end %>
+</table>
